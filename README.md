@@ -94,7 +94,7 @@ This project is for academic and educational purposes. Commercial use is not per
 
 ## 📬 Contact
 
-**Author:** Vishv Gehlot 
+**Author:** Vishv Gehlot
 **Role:** AI/ML Intern  
 **Company:** BrainWave Matrix Solution  
 **Email:** vishvgehlot10.email@example.com
