@@ -1,105 +1,106 @@
-# Brainwave_Matrix_Intern
-
-# 📰 Fake News Detection Using Machine Learning
-
-## 🚀 Project Overview
-
-This project aims to build a **Fake News Detection** system using classical machine learning algorithms. Given the rising issue of misinformation, especially on social media, this model helps classify news articles as **real** or **fake** based on their content.
+# 🧠 Fake News Detection Using Machine Learning
+*A project by Vishv Gehlot, AI/ML Intern at BrainWave Matrix Solution*
 
 ---
 
-## 📌 Objectives
+## 📘 Overview
 
-- Preprocess and clean a dataset containing news articles.
-- Build and train machine learning models for binary classification.
-- Evaluate model performance using standard metrics.
-- Deploy a basic pipeline for detecting fake news.
+In an age of information overload, distinguishing between **real** and **fake** news is more crucial than ever. This project focuses on building a **Fake News Detection** system using classical machine learning techniques to identify misinformation based on article content.
 
 ---
 
-## 📂 Dataset
+## 🎯 Objectives
+
+- 🧹 Clean and preprocess a real-world dataset of news articles.
+- 🤖 Train multiple ML models to classify news as **real** or **fake**.
+- 📈 Evaluate models using robust performance metrics.
+- 🌐 Provide a web-based interface for live prediction (Flask integration coming soon).
+
+---
+
+## 📊 Dataset
 
 - **Source:** [Kaggle - Fake and Real News Dataset](https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset)
 - **Features:**
-  - `title`: Headline of the article.
-  - `text`: Full content of the article.
+  - `title`: Headline of the article
+  - `text`: Full body of the article
   - `label`: 0 = Real, 1 = Fake
 
 ---
 
-## 🧹 Preprocessing Steps
+## 🔧 Preprocessing Steps
 
-- Lowercasing and punctuation removal  
-- Tokenization using NLTK  
-- Stopword removal  
-- Lemmatization/Stemming  
-- Vectorization using **TF-IDF** or **CountVectorizer**
-
----
-
-## 🧠 Models Used
-
-- ✅ Logistic Regression  
-- ✅ Multinomial Naive Bayes  
-- ✅ Random Forest Classifier  
-- ✅ Support Vector Machine (SVM)
+- Convert text to lowercase
+- Remove punctuation and special characters
+- Tokenize text using **NLTK**
+- Remove common **stopwords**
+- Apply **lemmatization**
+- Transform text using **TF-IDF** vectorization
 
 ---
 
-## 🧪 Evaluation Metrics
+## 🤖 Models Used
 
-Each model was evaluated based on:
+| Model                  | Accuracy | Precision | Recall | F1-Score |
+|-----------------------|----------|-----------|--------|----------|
+| Logistic Regression   | 95.2%    | 94.8%     | 95.7%  | 95.2%    |
+| Naive Bayes           | 92.3%    | 90.2%     | 93.5%  | 91.8%    |
+| Random Forest         | 96.1%    | 95.9%     | 96.3%  | 96.1%    |
+| Support Vector Machine| 94.7%    | 94.2%     | 95.1%  | 94.6%    |
 
+✅ All models were evaluated using:
 - Accuracy
 - Precision
 - Recall
 - F1-Score
 - Confusion Matrix
 
-### 📊 Sample Performance:
+---
 
-| Model                | Accuracy | Precision | Recall | F1-Score |
-|---------------------|----------|-----------|--------|----------|
-| Logistic Regression | 95.2%    | 94.8%     | 95.7%  | 95.2%    |
-| Naive Bayes         | 92.3%    | 90.2%     | 93.5%  | 91.8%    |
-| Random Forest       | 96.1%    | 95.9%     | 96.3%  | 96.1%    |
-| SVM                 | 94.7%    | 94.2%     | 95.1%  | 94.6%    |
+## 🛠️ Tech Stack
+
+- **Python**
+- **scikit-learn**
+- **pandas**, **numpy**
+- **nltk**
+- **matplotlib**, **seaborn**
 
 ---
 
-## 🛠️ Technologies
+## 🌐 Web Integration (Planned)
 
-- Python  
-- scikit-learn  
-- pandas  
-- numpy  
-- nltk  
-- matplotlib / seaborn (for visualization)
+- ✅ Flask web app for user input and prediction
+- 🔄 Model integration using `joblib`
+- 🧪 Simple UI to paste news and get result (Real / Fake)
 
 ---
 
-## 💡 Future Enhancements
+## 🚀 Future Enhancements
 
-- Integrate with a Flask web app for UI-based detection  
-- Try deep learning models like **BERT** or **LSTM**  
-- Deploy the model using **Docker** or on **AWS/GCP**
-
----
-
-## 🧾 License
-
-This project is for academic and educational purposes. Commercial use is not permitted without permission.
+- 🧠 Upgrade to transformer models like **BERT** or **LSTM**
+- ☁️ Deploy using **Docker**, **AWS**, or **GCP**
+- 🔐 Add API-based fake news scanning endpoint
 
 ---
 
-## 📬 Contact
+## 📄 License
 
-**Author:** Vishv Gehlot
-**Role:** AI/ML Intern  
-**Company:** BrainWave Matrix Solution  
-**Email:** vishvgehlot10.email@example.com
+This project is intended for **academic and educational use only**.  
+For commercial use or collaboration, please contact the author.
 
 ---
 
-## ⭐️ Don't forget to star this repo if you find it helpful!
+## 👤 Author
 
+**Vishv Gehlot**  
+AI/ML Intern @ BrainWave Matrix Solution  
+📧 Email: `vishvgehlot10.email@example.com`
+
+---
+
+## 🌟 Feedback & Support
+
+If you found this project useful, consider giving it a ⭐️ and sharing it!  
+Feel free to fork, open issues, or suggest improvements.
+
+---
