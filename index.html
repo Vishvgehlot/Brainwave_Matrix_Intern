@@ -1,0 +1,18 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fake News Detector</title>
+</head>
+<body>
+    <h2>Fake News Detection</h2>
+    <form method="post">
+        <textarea name="news" rows="10" cols="80" placeholder="Paste news article text here..." required></textarea><br>
+        <button type="submit">Check</button>
+    </form>
+    {% if result %}
+        <h3>{{ result }}</h3>
+    {% endif %}
+</body>
+</html>
